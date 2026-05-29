@@ -1,4 +1,6 @@
 # Amazon-E-Commerce-Project
+<img width="1408" height="484" alt="Gemini_Generated_Image_btb3uabtb3uabtb3" src="https://github.com/user-attachments/assets/afef8efa-af6c-473a-ba97-eb602017cad2" />
+
 
 ## Introduction
 The rapid growth of e-commerce platforms has generated massive amounts of customer review data, making it difficult for businesses to manually analyze customer opinions and feedback. This project focuses on applying Natural Language Processing (NLP) techniques to Amazon product reviews in order to extract meaningful insights from unstructured text data.
