@@ -56,5 +56,26 @@ Overall Insight
 The dataset reveals that Amazon's marketplace is heavily driven by electronics-related products, with substantial discounts playing a major role in pricing strategy. Customer ratings are generally high across categories, indicating strong user satisfaction, while product popularity varies significantly based on review volume and category.
 
 ## Model
+## Machine Learning & Sentiment Analysis Summary
+
+This project incorporates both predictive modeling and natural language processing (NLP) techniques to analyze product characteristics and user review patterns.
+
+### 1. Sentiment Analysis (NLP)
+* **Algorithm/Library:** VADER (Valued Sentiment Dictionary and Sentiment Reasoner) via `nltk.sentiment.vader.SentimentIntensityAnalyzer`.
+* **Objective:** To evaluate and quantify the textual content of user reviews (`review_content`) into standard sentiment metrics.
+* **Outputs:** For each product review, the algorithm calculates:
+  * **Positive Score**
+  * **Neutral Score**
+  * **Negative Score**
+  * **Compound Score** (A normalized metric bridging `-1` for extreme negative sentiment and `+1` for extreme positive sentiment).
+* **Usage:** Used to establish data-driven trends between buyers' written sentiment scores and their corresponding numerical star ratings.
+
+### 2. Predictive Modeling & Statistical Diagnostics
+* **Algorithm:** Ordinary Least Squares (OLS) Linear Regression.
+* **Objective:** To test linear relationships between numerical features (such as pricing metrics and review trends).
+* **Statistical Insights & Validations:**
+  * **Residual Analysis:** A residual plotting stage was integrated to validate key regression assumptions.
+  * **Heteroscedasticity Assessment:** Diagnostic plots revealed the presence of *Heteroscedasticity* (non-constant variance in error terms across the predictor range). 
+  * **Conclusion:** Because the assumption of homoscedasticity was violated, the notebook establishes that the baseline data requirements for a reliable Linear Regression model are **not met**, underscoring the necessity for alternative non-linear models or transformation pipelines in future iterations.
 
 ## Model Evaluation
